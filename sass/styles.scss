@@ -1,0 +1,105 @@
+@use "resets";
+@use "global";
+@import "responsive";
+
+//font-family: 'League Spartan', sans-serif;
+.body {
+  background-image: url("./imgs/bg-pattern-top-mobile.svg"),
+    url("./imgs/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top, bottom;
+  font-size: 15px;
+}
+
+.header {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+  &__title {
+    font-family: "League Spartan", sans-serif;
+    font-weight: bolder;
+    font-size: 2rem;
+    text-align: center;
+    margin-inline: 1rem;
+    color: hsl(300, 43%, 22%);
+    padding-top: 3rem;
+  }
+
+  &__paragraph {
+    font-family: "League Spartan", sans-serif;
+    font-weight: lighter;
+    color: hsl(303, 10%, 53%);
+    margin-inline: 3rem;
+    text-align: center;
+  }
+}
+
+.rating {
+  &-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-block: 1rem;
+    background-color: rgb(245, 238, 246);
+    margin-inline: 1rem;
+    border-radius: 6px;
+    padding: 0.5rem;
+  }
+
+  &__paragraph {
+    font-family: "League Spartan", sans-serif;
+    color: hsl(300, 43%, 22%);
+    font-weight: bolder;
+  }
+}
+
+.user-opinion {
+  padding: 1rem;
+  margin-top: 2rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  &__container {
+    background-color: hsl(300, 43%, 22%);
+    font-family: "League Spartan", sans-serif;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+}
+
+.user-data-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.user-image__container {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+.user__name {
+  color: white;
+  width: 6rem;
+}
+.user__verify {
+  color: hsl(333, 80%, 67%);
+  width: 5rem;
+}
+.user__personal-opinion {
+  color: white;
+}
+
+.user__image {
+  border-radius: 50px;
+  width: 3rem;
+}
+
+.user__data {
+  padding-top: 1rem;
+}
